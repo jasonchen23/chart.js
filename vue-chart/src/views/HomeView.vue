@@ -20,7 +20,34 @@ export default {
   },
   data() {
     return {
-      c
+      chartData: {
+        labels: [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+        ],
+        datasets: [
+          {
+            label: "Data 1",
+            data: [2,10,5,9,0,6,20],
+            backgroundColor: "yellow",
+            borderColor: "blue",
+            pointBackgroundColor: "green",
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        title: {
+          display: true,
+          text: "My Data"
+        }
+      }
     }
   }
 }
